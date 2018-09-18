@@ -21,7 +21,7 @@ films = [
 
 @app.route('/films',methods = ['GET'])
 def returnAll():
-  return jsonify({'students': students})
+  return jsonify({'films': films})
 
 @app.route('/films/<string:title>',methods = ['GET'])
 def returnOne(Title):
